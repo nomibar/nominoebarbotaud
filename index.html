@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Portfolio Nominoë Barbotaud</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <nav class="menu">
+            <h1><span>Nominoë </span>Barbotaud</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>    
+                <li><a href="#scol">A propos de moi</a></li>
+                <li><a href="#projets">Mes projets personnel</a></li>
+                <li><a href="competances.html">Mes competances</a></li>
+            </ul>
+            
+        </nav>
+
+        <div class="bgAnimation" id="bgAnimation">
+            <div class="backgroundAmim">
+            </div>
+            <div class="backgroundAnimation2">
+
+            </div>
+        </div>
+        <div class="container">
+
+            
+
+          
+           
+
+        
+            <main>
+                <article class="articleprincipal">
+                    <div class="pres">
+                        <div class="name">
+                            <h3 class="first-name">Nominoë</h3>
+                            <h3 class="last-name">Barbotaud</h3>
+                            
+                        </div>
+
+                        <div class="met">
+                            <h3 class="dev">Developpeur</h3>
+                            <h3 class="apli">Application</h3>
+                            
+                        </div>
+
+                        <div class="sidebar">
+                            <bouton class="boutontele"><a href="CV_BARBOTAUD_NOMINOE.pdf" download class="download-button">Ouvrir le CV</a></bouton>
+        
+                            <a href="./Cv_BARBOTAUD_NOMINOE.jpg" download='image.jpg' class="download-button">Download</a>
+        
+                            <div class="cv-preview">
+        
+                                
+                                <img src="Cv_BARBOTAUD_NOMINOE.jpg" alt="Preview CV">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <hr>
+
+                    
+
+
+                    
+                  
+                    <div class="corp">
+                        <h2 id="scol">A propos de moi</h2>
+                        <div class="group">
+                            <p>
+                                <span class="bleu">Bonjour</span> ! En tant qu’étudiant en BUT Informatique, je suis passionné par le <span class="bleu">développement logiciel</span>.
+                                <br> 
+                                J'ai pour ambition de devenir développeur logiciel fullstack !
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                Je suis a la recherche d'une <span class="bleu">alternance</span> dans le <span class="bleu">developpeent informatique</span> , 
+                                <br>et de preferance dans le <span class="bleu">developpement logiciel</span>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                J'ai obtenu mon <span class="bleu">BAC</span> mention bien avec les options <span class="bleu">Mathematique</span> et <span class="bleu">Numerique Science Informatique</span>
+
+                            </p>
+                            <img class="moi" src="Images/moi.jpg">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    <br >
+                  
+                    <a href="https://github.com/nomibar/mod" class="link-button">Voir code</a>
+            
+                    <div id="projets" class="project-container">
+                        <p class="breadcrumb" >MOD MINECRAFT</p>
+                        <h1 class="project-title">MOD MINECRAFT</h1>
+                        <h2 class="project-subtitle">Projet personnel / <span class="highlight">DEVELOPER</span> </h2>
+                        <p class="project-description">
+                            Le but de ce projet est de creer mod pour le jeu MINECRAFT 
+                        </p>
+                        <h3 class="steps-title">ÉTAPES /</h3>
+                        <ul class="steps-list">
+                            <li>Apprendrele langage</li>
+                            <li>Configuration de l'environement de travail</li>
+                            <li>Developpement</li>
+                        </ul>
+                        <div class="image-container">
+                            <img src="Images/modminecraft.png" alt="mon mod" onclick="openFullscreenImage('Images/modminecraft.png')">
+                            <img class="imgcentre" src="Images/minecraft.png" alt="minecratf" onclick="openFullscreenImage('Images/minecraft.png')">
+                            <img src="Images/code.png" alt="code" onclick="openFullscreenImage('Images/code.png')">
+                        </div>
+                    </div>
+                    <div class="fullscreen-image" id="fullscreenImage">
+                        <img src="" alt="Fullscreen Image">
+                        <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+                    </div>
+                    <script>
+                        function openFullscreenImage(imageSrc) {
+                            var fullscreenImage = document.getElementById("fullscreenImage");
+                            var imageElement = fullscreenImage.querySelector("img");
+                            imageElement.src = imageSrc;
+                            fullscreenImage.style.display = "flex";
+                        }
+                
+                        function closeFullscreenImage() {
+                            document.getElementById("fullscreenImage").style.display = "none";
+                        }
+                    </script>
+            
+
+
+
+                </article>
+                
+            </main>
+           
+            
+        
+        <hr>
+
+
+
+        </div>
+
+        
+        <footer>
+
+            <div class="footer-content">
+                <h3>Contactez-moi</h3>
+                <p><span>Email</span>: nominoebarbotaud@gmail.com</p>
+                <p><span>Téléphone</span>: +33 6 42 10 47 95</p>
+                <p><span>Adresse</span>: 37 cote du Rest, 22300 Lannion, France</p>
+
+                <p><span>Reseaux</span></p>
+                <ul>
+                    <li class="lin"><a href="https://www.linkedin.com/in/nominoe-barbotaud-3761a92bb/">Linkedin</a></li>    
+                    <li class="git"><a href="https://github.com/nomibar">GitHub</a></li>
+                </ul>
+               
+            </div>
+            
+        </footer>
+
+    
+    </body>
+</html>
