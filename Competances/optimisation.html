@@ -800,6 +800,19 @@
             .container3 {
                 margin-top: 150px; 
             }
+            .bgAnimation {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 120%;
+                height: 140em; 
+                display: grid;
+                grid-template-columns: repeat(20, 1fr);
+                grid-template-rows: repeat(20, 1fr);
+                background: #1d1d1d;
+                filter: saturate(2);
+                overflow: hidden;
+            }
         </style>
     </head>
     <body>
@@ -844,6 +857,34 @@
             </div>
             <hr>
         </div>
+
+        <div class="container3">
+            
+            <a href="https://github.com/nomibar/SAE2.02" class="link-button">Voir code</a>
+
+            <div class="project-container">
+                <p class="breadcrumb">OPTIMISATION D'APPLICATIONS</p>
+                <h1 class="project-title">PROBLEME DU CAVALIER</h1>
+                <h2 class="project-subtitle">SAE 2.02 / <span class="highlight">IMPLEMENTATION</span> / <span class="highlight">OPTIMISATION</span></h2>
+                <p class="project-description">
+                    Le but de ce projet était de résoudre le probleme du cavalier.
+                </p>
+                <h3 class="steps-title">ÉTAPES /</h3>
+                <ul class="steps-list">
+                    <li>Compréhension du problème</li>
+                    <li>Représentation de la grille d'echec</li>
+                    <li>Creation du graphe de résolution</li>
+                    <li>Résolution et affichage du résultat</li>
+                </ul>
+                <div class="image-container">
+                    <img src="Images/math1.png" alt="image du code du solveur de sudoku" onclick="openFullscreenImage('Images/math1.png')">
+                    <img class="imgcentre" src="Images/math2.png" alt="image du résolveur de sudoku" onclick="openFullscreenImage('Images/math2.png')">
+                    <img src="Images/math3.png" alt="image d'un sudoku de 16 par 16" onclick="openFullscreenImage('Images/math3.png')">
+                </div>
+            </div>
+            <hr>
+        </div>
+
         <footer>
             
         </footer>
