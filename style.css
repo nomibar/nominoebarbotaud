@@ -313,7 +313,6 @@ hr {
 
 .container2 .item:nth-child(odd) .title, .container2 .item:nth-child(even) .title,
 .container3 .item:nth-child(odd) .title, .container3 .item:nth-child(even) .title {
-    background-color: #00bfff;
     padding: 10px;
     opacity: 0.7;
 }
@@ -544,3 +543,25 @@ footer ul li:hover::after {
     cursor: pointer;
 }
 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
